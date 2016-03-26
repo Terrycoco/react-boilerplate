@@ -30,13 +30,18 @@ module.exports = {
         loaders: [
             { test: /\.jsx$/,
                 loader: 'react-hot!babel',
-                include: path.join(__dirname, 'src') },
+                include: path.join(__dirname, 'src') 
+            },
             { test: /\.js$/,
                 loader: 'babel',
-                include: path.join(__dirname, 'src') },
+                include: path.join(__dirname, 'src'),
+                exclude: /node_modules/
+
+            },
             { test: /\.scss?$/,
                 loader: 'style!css!sass',
-                include: path.join(__dirname, 'css') },
+                include: path.join(__dirname, 'css') 
+            },
             { test: /\.css$/,
                 loader: 'style!css' }
         ]

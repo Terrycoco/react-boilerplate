@@ -1,8 +1,10 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-
+import "babel-polyfill";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Example from './examples/example-simple';
 // to compile styles
-var Styles = require('../css/app.scss');
+import Styles from '../css/app.scss';
 
-ReactDOM.render('<div>hello world</div>'
+ReactDOM.render(
+	<Example />
   , document.getElementById('app'));
