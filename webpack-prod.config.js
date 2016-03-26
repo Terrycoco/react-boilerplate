@@ -6,7 +6,7 @@ var webpack = require('webpack');
 module.exports = {
     devtool: 'source-map',
     entry: [
-        './src/entry.jsx'
+        './src/entry.js'
     ],
     output: {
         path: path.join(__dirname, 'public'),

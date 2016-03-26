@@ -8,7 +8,7 @@ module.exports = {
 
     entry: [
         'webpack/hot/only-dev-server',
-        './src/entry.jsx'
+        './src/entry.js'
     ],
 
     output: {
