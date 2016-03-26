@@ -1,15 +1,9 @@
-# MAKING A REACT WEB APP BOILERPLATE
+# A REACT WEB APP BOILERPLATE
 
-### This is used to build [CarpStreet](http://www.carpstreet.com/#!How-to-Build-CarpStreet-Step-0-Deploying-a-Barebone-Reactjs-Express-Webpack-Website-to-Heroku/crbdq/56827cbb0cf21caddb9a2560), where the full tutorial is.
 
 ## Goal
-Creating and deploying to Heroku the most barebone React app.
-
-## Pre-requisites
-- Basic understanding of JS and HTML
-- Installed the Heroku Toolbelt and npm.
-- A conceptual understanding of Reactjs and JSX files -- which is basically typing HTML into JavaScript, which gets translated into pure HTML to be understood by the browser.
-
+Building on a barebones react app with webpack and heroku deployment.  Goal is to create full fledged starter kit with all that is needed to create and deploy react apps. Original barebones scaffold found here:
+http://www.carpstreet.com/#!How-to-Build-CarpStreet-Step-0-Deploying-a-Barebone-Reactjs-Express-Webpack-Website-to-Heroku/crbdq/56827cbb0cf21caddb9a2560
 
 ## Steps to creating the app:
 
@@ -20,7 +14,7 @@ Creating and deploying to Heroku the most barebone React app.
 
 1. State which modules are needed
     - Create *package.json*, which states which libraries are required by the app.
-    - Fill it with the most basic libraries: react, babel, babel-loader, webpack. 
+    - Fill it with the most basic libraries: react, babel, babel-loader, webpack.
 
 2. Write an entry point JS/JSX file
     - Create a file that "kicks off" the application. *src/entry.jsx* here.
@@ -35,7 +29,7 @@ Creating and deploying to Heroku the most barebone React app.
     - Run **"webpack-dev-server --config ./webpack-dev.config.js --port <portnumber> --inline"** for continuous auto-build and auto browser-refresh.
     - Go to *http://localhost:<portnumber>/public* to see the webpage. Error, if any, will be shown in full there.  
 
-4. Create index.html that has a script tag pointing to the *bundle.js* file that was created in the previous step 
+4. Create index.html that has a script tag pointing to the *bundle.js* file that was created in the previous step
 
 5. Get scss styles to work
     - create *css/app.scss*
@@ -51,7 +45,7 @@ Creating and deploying to Heroku the most barebone React app.
 
 3. Add to package.json a *postinstall* script that:
     - runs webpack to produce bundle.js on the Heroku machine
-    - starts the express server ("node server.js" is assumed by Heroku if this line in package.json were missing.) 
+    - starts the express server ("node server.js" is assumed by Heroku if this line in package.json were missing.)
 
 
 ### What don't need to be / shouldn't be deployed:
